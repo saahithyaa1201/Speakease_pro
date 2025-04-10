@@ -1,0 +1,5 @@
+- Create seperate branch and issue for every work and then create a pull request.
+- Do your work independently and don't worry about navigation. I will take care of it.
+- Use angular commit messages for every commit.
+- Download Expo Go and run the project
+- This project uses yarn

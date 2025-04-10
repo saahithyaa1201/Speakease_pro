@@ -1,0 +1,93 @@
+uid
+ userName
+ name 
+ proficiencyLevel
+ lessonsCompleted
+   idOfSubtopic, totalDuration, overallFeedback, timeStamp(lessonEnd)
+ currentLevel
+ initialLevel
+ subscibedPlan (default free)
+ subscriptionInfo
+  dateOfSubscription
+  plan
+  amountPaid
+  expiry
+  dataRelatedToPayment
+ profileImageURL
+
+subscriptionPlanInfo
+  id
+  code (FREE or TIERx)
+  price
+  featureCode[]
+
+FREE, TIER1, TIER2
+
+contents levels
+A1
+A2
+B1
+B2
+C1
+
+for progress show how many completed out of every topic and subtopics for selected topics
+speak at-least 50/100/150 words for each topic for level completion
+on settings screen select levels
+lesson view is independent so can open any lesson under any category
+you can complete a lesson multiple times and db will contain multiple records must filter for progress
+for progress tracking show completed lessons by a date filter 
+for badges 3 available divide total lessons and show
+for daily goals allow user to choose no of lessons to complete and show the status. store required data in local storage
+for graph query backend for lessonsCompleted information and show according to the filters (allow the user to select week,month and year)
+
+Subscriptions:
+default plan is free
+restrict no of words spoken
+
+Notification:
+select a subtopic and long-click to remind with time and date selection
+
+contents
+ id 
+  title
+  description
+  sub-topic
+     id
+     title
+     description
+     prompt
+  tags
+  level
+
+filter contents by tags
+for each message bubble on long press show corrected sentence with improved vocab and grammar relevant for level
+
+settings screen 
+ edit name
+ change profile image
+ change subscription plan
+ light/dark mode
+
+subscription screen
+ show current subscription
+ show detailed information for all subscription plans
+ for change in subscription connect with payhere (get all data in a seperate screen)
+ for each subscription change it resets the current one (reset quota and features)
+
+feature restrictions
+graph
+badge
+daily goal
+notification reminder
+noOfWords spoken per daily
+
+graph (y axis no of completed lessons)
+last 7 days
+month and for each days display
+year and for each month display
+
+'progress' in AsyncStorage
+{"03/09/2025": [
+{"noOfWordsSpoken": 18, "timeStamp": "2025-03-09T11:24:10.287Z", "topic": "Science"},
+{"noOfWordsSpoken": 0, "timeStamp": "2025-03-09T11:24:10.287Z", "topic": "Nutrition"}
+]}

@@ -1,0 +1,12 @@
+{
+	"name": "speakease",
+	"version": "0.0.1",
+	"description": "This server is reponsible for handling the realtime conversation between user and AI",
+	"type": "module",
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"express": "4",
+		"openai": "^4.84.0",
+		"socket.io": "^4.8.1"
+	}
+}
